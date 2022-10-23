@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    background-image: url(galaxy.jpg);
+    padding: 10px;
+    color: white;
+    font-family: Tahoma;
+}
+
+.header {
+    margin: 2em auto;
+    text-align: center;
+    line-height: 16px;
+}
+
+#title {
+    font-weight: lighter;
+}
+
+#description {
+    font-style: italic;
+}
+
+fieldset{
+    background-color: rgb(27, 36, 46);
+    border: none;
+    opacity: 95%;
+    padding: 1rem;
+}
+
+#survey-form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.form-control, textarea {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+}
+
+#submit {
+    background: rgb(7, 163, 7);
+    color: white;
+    height: 3rem;
+    margin-bottom: 1rem;
+}
+
+#radio {
+    display: flex;
+    
+}

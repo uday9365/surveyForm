@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the plateform</p>
+    </header>
+    <form id="survey-form">
+        <fieldset>
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" name="user_name" required class="form-control" placeholder="Tom Holland">
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" name="email_add" required class="form-control" placeholder="abc123@gmail.com">
+            </div>
+            <div class="form-group">
+                <label for="number" id="number-label">Age(optional)</label>
+                <input type="number" id="number" name="user_age" min="13" max="120" class="form-control" placeholder="21">
+            </div>
+            <div class="form-group">
+            <p>Which option best describes your current role?</p>
+                <select id="dropdown" name="dropdown" class="form-control" required>
+                    <option disabled selected value>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full time job</option>
+                    <option value="learner">Full time learner</option>
+                    <option value="say">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+        </fieldset>
+        <fieldset>
+            <p>Would you recommend freeCodeCamp to a friend?</p>
+            <div class="form-group">
+                <input type="radio" id="definitely" name="recommend" value="definitely">
+                <label for="definitely">Definitely</label>
+            </div>
+            <div class="form-group">
+                <input type="radio" id="maybe" name="recommend" value="maybe">
+                <label for="maybe">Maybe</label>
+            </div>
+            <div class="form-group">
+                <input type="radio" id="notsure" name="recommend" value="notsure">
+                <label for="notsure">Not sure</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <div class="form-group">
+            <p>What is your favourite feature of the freeCodeCamp?</p>
+                <select id="feature" name="feature" class="form-control" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="challange">Challange</option>
+                    <option value="project">Project</option>
+                    <option value="community">Community</option>
+                    <option value="opensource">Open Source</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>What would you like to see improve?
+                    <span>(check all that apply)</span>
+                </p>
+                <label for="front-end">
+                    <input type="checkbox" id="front-end" name="prefer" value="front-end-project" class="input-checkbox">
+                    Front-end Project
+                </label>
+                <label for="back-end">
+                    <input type="checkbox" id="back-end" name="prefer" value="back-end-project" class="input-checkbox">
+                    Back-end Project
+                </label>
+                <label for="data">
+                    <input type="checkbox" id="data" name="prefer" value="data-visualization" class="input-checkbox">
+                    Data Visualization
+                </label>
+                <label for="challanges">
+                    <input type="checkbox" id="challanges" name="prefer" value="challanges" class="input-checkbox">
+                    Challanges
+                </label>
+                <label for="community">
+                    <input type="checkbox" id="community" name="prefer" value="open-source-community" class="input-checkbox">
+                    Open Source Community
+                </label>
+                <label for="git">
+                    <input type="checkbox" id="git" name="prefer" value="gitter-help-room" class="input-checkbox">
+                    Gitter help rooms
+                </label>
+                <label for="videos">
+                    <input type="checkbox" id="videos" name="prefer" value="videos" class="input-checkbox">
+                    Videos
+                </label>
+                <label for="meetup">
+                    <input type="checkbox" id="meetup" name="prefer" value="city-meetup" class="input-checkbox">
+                    City Meetups
+                </label>
+                <label for="wiki">
+                    <input type="checkbox" id="wiki" name="prefer" value="wiki" class="input-checkbox">
+                    Wiki
+                </label>
+                <label for="forum">
+                    <input type="checkbox" id="forum" name="prefer" value="forum" class="input-checkbox">
+                    Forum
+                </label>
+                <label for="courses">
+                    <input type="checkbox" id="courses" name="prefer" value="additional-courses" class="input-checkbox">
+                    Additional Courses
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="comment">Any comments or suggestion?
+                    <textarea id="comment" name="comment" rows="8" placeholder="Enter your comment here..."></textarea>
+                </label>
+            </div>
+            <input type="submit" id="submit" value="Submit" class="form-control">
+        </fieldset>        
+    </form>
+</body>
+</html>
